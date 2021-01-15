@@ -1,0 +1,230 @@
+<!doctype html>
+<!-- Main Root -->
+<html>
+<head>
+    <!-- Document metadata -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Nhat Nguyen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 101 Lab 2</title>
+
+    <style>
+    body {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 50px;
+        padding-bottom: 10px;
+    }
+
+    div {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .projects {
+        margin-left : 15px;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    nav {
+        display: block;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Content sectioning -->
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="history.html">History</a> |
+    </nav>
+    <!-- My Name -->
+    <!-- h1 through h5 are headers. The higher the number, the smaller the header -->
+    <h1>Nhat Nguyen</h1> 
+    <h2>CSE 101 Lab 2</h2>
+    <h3>Favorite Sport Team: Arsenal</h3>
+    <!-- Images and multimedia -->
+    <img src="images/banner.jpg" alt="Arsenal Banner" class="center">
+
+    
+    <!-- Text content -->
+    <div class="projects">
+        <section>
+            <!-- Information -->
+            <h4>Information</h4>
+            <!-- Interactive elements -->
+            <details>
+                <summary>Summary</summary>
+                <p>
+                    Arsenal Football Club is a professional football club based in Islington, London, England that plays in the Premier League,
+                    the top flight of English football.
+                </p>
+            </details>
+            <p>
+                
+            </p>
+            <ul>
+                <li>
+                    Manager: <a href="https://en.wikipedia.org/wiki/Mikel_Arteta">Mikel Arteta</a>
+                </li>
+                <li>
+                    Arena/Stadium: <a href="https://en.wikipedia.org/wiki/Emirates_Stadium">Emirates Stadium</a>
+                </li>
+                <li>
+                    Owner: <a href="https://en.wikipedia.org/wiki/Kroenke_Sports_%26_Entertainment">KSE, UK, Inc.</a>
+                </li>
+                <li>
+                    Location: <a href="https://en.wikipedia.org/wiki/London_Borough_of_Islington">London Borough of Islington, London, United Kingdom</a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <!-- Current Favorite XI Team -->
+            <h4>Current Favorite XI Team</h4>
+            <!-- Inline text semantics -->
+            <b>This is my favorite current XI team:</b>
+            <ol>
+                <li><b>Goalkeeper:</b> 
+                    <ul>
+                        <li>1.Bernd Leno</li>
+                    </ul>
+                </li>
+                <li><b>Defenders:</b>
+                    <ul>
+                        <li>2. Hector Bellerin</li>
+                        <li>3. Kieran Tierney</li>
+                        <li>6. Gabriel</li>
+                        <li>16. Rob Holding</li>
+                    </ul>
+                </li>
+                <li><b>Midfielders:</b>
+                    <ul>
+                        
+                        <li>18. Thomas Partey</li>
+                        <li>32. Emile Smith Rowe</li>
+                        <li>34. Granit Xhaka</li>
+                    </ul>
+                </li>
+                <li><b>Forwards:</b>
+                    <ul>
+                        <li>7. Bukayo Saka</li>
+                        <li>14. Aubameyang</li>
+                        <li>19. Nicolas Pepe</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <!-- Recent Result Matches -->
+            <h4>Recent Match Results</h4>
+            <!-- Table -->
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Home/Away</th>
+                    <th>Team</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>Sat, 1/9</td>
+                    <td>Home</td>
+                    <td>Newcastle</td>
+                    <td>2-0</td>
+                </tr>
+                <tr>
+                    <td>Sat, 1/2</td>
+                    <td>Away</td>
+                    <td>West Brom</td>
+                    <td>0-4</td>
+                </tr>
+                <tr>
+                    <td>Tue, 12/29</td>
+                    <td>Away</td>
+                    <td>Brighton</td>
+                    <td>0-1</td>
+                </tr>
+                <tr>
+                    <td>Sat, 12/26</td>
+                    <td>Home</td>
+                    <td>Chelsea</td>
+                    <td>3-1</td>
+                </tr>
+              </table>
+        </section>
+
+        <section>
+            <h4>Interested in becoming Gunners? Please enter your information below:</h4>
+            <!-- Forms -->
+            <form action="/action_page.php">
+                <!-- 1. text -->
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="gernes">Gerne:</label><br>
+                <select name="gernes" id="gernes">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="na">N/A</option>
+                </select><br>
+                <!-- 2. email -->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <!-- 3. number -->
+                <label for="phNumber">Telephone Number:</label><br>
+                <input type="number" id="phNumber" name="phNumber"> <br>
+                <label for="uName">User Namme:</label><br>
+                <input type="text" id="uName" name="uName"><br>
+                <!-- 4. password -->
+                <label for="pWord">Password:</label><br>
+                <input type="password" id="pWord" name="pWord"><br>
+                <!-- 5. date -->
+                <labeL for="date">Date of Birth:</labeL><br>
+                <input type="date" id="date" name="date"><br>
+                <!-- 6. color -->
+                <label for="color">Favorite Color:</label><br>
+                <input type="color" id="color" name="color"><br>
+                <!-- file -->
+                <label for="pic">Upload your profile picture:</label><br>
+                <input type="file" id="pic" name="pic"><br>
+                <!-- 7. checkbox -->
+                <input type="checkbox" id="subs" name="subs"> Agree to subscribe to newsletters <br>
+                <!-- 8. radio -->
+                <p>Select all that apply?</p>
+                <input type="radio" id="1w" name="1w" value="1w">
+                <label for="1w">Love watching soccer match</label><br>
+                <input type="radio" id="1m" name="1m" value="1m">
+                <label for="1m">Love playing soccer</label><br>
+                <!-- 9. submit -->
+                <input type="submit" value="Submit">
+              </form> 
+        </section>
+    </div>
+</body>
+</html>
