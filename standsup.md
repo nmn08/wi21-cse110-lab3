@@ -1,8 +1,12 @@
 # Meeting Name
 **Attendance**: 
-**Speaker**:   
+
+**Speaker**:
+
 **Note-taker**:
-**Date**:    
+
+**Date**:   
+ 
 **Time**: 
 
 ### Tasks
