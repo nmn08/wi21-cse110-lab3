@@ -1,0 +1,164 @@
+/* CSS Topics: CSS Comment */
+/* This is a custom CSS file */
+
+/* Selectors: Class Selector */
+.projects {
+    margin-left : 15px;
+}
+.center {
+    /* CSS Topics: Display */
+    display: block;
+    /* CSS Topics: Box Model - Margin */
+    margin-left: auto;
+    margin-right: auto;
+    /* CSS Topics: Relative Unit 1 */
+    width: 100%;
+}
+.column {
+    display: block;
+    float: left;
+    width: 49%;
+    padding: 0.5%;
+}
+
+/* Selectors: ID Selector */
+#resultTable {
+    /* CSS Topics: Fonts */
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    /* CSS Topics: Box Model - Width */
+    width: 100%;
+}
+
+/* Selectors: Universal Selector */
+* {
+    /* CSS Topics: Backgrounds */
+    background-color:rgb(219, 209, 195);
+}
+
+/* Selectors: Element  Selector */
+div {
+    /* CSS Topics: Absolute Unit 1 */
+    /* CSS Topics: Box Model - Padding */
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+nav {
+    display: block;
+    /* CSS Topics: Relative Unit 2 */
+    font-size: 2vw;
+}
+
+/* Selectors: Attribute Selector */
+[title=banner] {
+    /* CSS Topics: Border */
+    border-style: inset;
+    border-top-color: grey;
+    border-left-color: grey;
+    border-right-color: white;
+    border-bottom-color: white;
+    /* CSS Topics: Absolute Unit 2 */
+    border-width: 2mm;
+
+}
+
+/* Selectors: Pseudo-class Selector */
+a:visited {
+    /* CSS Topics: Color */
+    color: #876ef5;
+}
+
+
+
+/* Selectors: Grouping / Combinators Selector */
+td, th {
+    /* CSS Topics: Absolute Unit 3 */
+    border: 2pt solid #616161;
+    /* CSS Topics: Text */
+    text-align: left;
+    padding: 8px;
+    /* CSS Topics: Relative Unit 3 */
+    font-size: 1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* CSS Topics: Max-width / Min-width and Media Query*/
+@media (min-width: 800px) {
+    .flex-container > div {
+        flex: 1 47%;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* CSS Topics: Position */
+div.relative {
+    position: relative;
+    width: 50%;
+    /* height: 100%; */
+    border: 3px solid red;
+    margin-left:25%;
+    padding-left: 25px;
+}
+
+button.fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+/* CSS Topics: Pseudo-class */
+a:hover {
+    color: #ff0000;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+.flex-item {
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  margin-right: 5px;
+  font-weight: bold;
+  text-align: center;
+  border-style: solid;
+}
+
+/* CSS Topics: Grid */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'main main main main right right';
+    grid-gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+}
+.header {
+    grid-area: header; 
+}
+.main {
+    grid-area: main; 
+}
+.right {
+    grid-area: right;
+    border-style: solid;
+    text-align: center;
+}
